@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS missing;
+
+CREATE TABLE IF NOT EXISTS missing (
+    ID SERIAL,
+    CO NUMERIC(3, 3), 
+    PT081 NUMERIC(3, 3), 
+    NMHC NUMERIC(3, 3), 
+    C6H6 NUMERIC(3, 3), 
+    PT082 NUMERIC(3, 3), 
+    NOx NUMERIC(3, 3), 
+    PT083 NUMERIC(3, 3), 
+    NO2 NUMERIC(3, 3), 
+    PT084 NUMERIC(3, 3), 
+    PT085 NUMERIC(3, 3), 
+    T NUMERIC(3, 3), 
+    RH NUMERIC(3, 3), 
+    AH NUMERIC(3, 3)
+)
