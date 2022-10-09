@@ -127,8 +127,7 @@ class LoadAllReports(luigi.WrapperTask):
         yield LoadDailyAverages(self.initDate, self.endDate)
 
 if __name__ == '__main__':
-    luigi.build([DailyAverageReport(initDate=datetime(2004,3,10), endDate=datetime(2005, 4, 5)), LoadAllReports()], workers=1, local_scheduler=True)
-    #luigi.run(['GetDailyAverage', '--workers', '1', '--local-scheduler'])
+    luigi.build([LoadAllReports(initDate=datetime(2004,3,10), endDate=datetime(2005, 4, 5))], workers=1, local_scheduler=True)
 
 
 
